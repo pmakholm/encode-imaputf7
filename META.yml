@@ -1,0 +1,15 @@
+--- #YAML:1.0
+name:                Encode-IMAPUTF7
+version:             1.04
+abstract:            modification of UTF-7 encoding for IMAP
+license:             ~
+author:              
+    - Peter Makholm <peter@makholm.net>
+generated_by:        ExtUtils::MakeMaker version 6.42
+distribution_type:   module
+requires:     
+    Encode:                        0
+    Test::NoWarnings:              0
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
+    version: 1.3
