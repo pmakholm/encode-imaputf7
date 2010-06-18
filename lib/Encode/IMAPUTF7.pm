@@ -6,7 +6,7 @@ use strict;
 no warnings 'redefine';
 use base qw(Encode::Encoding);
 __PACKAGE__->Define('IMAP-UTF-7', 'imap-utf-7');
-our $VERSION = '1.04';
+our $VERSION = '1.05';
 use MIME::Base64;
 use Encode;
 
