@@ -1,5 +1,8 @@
 Revision history for Perl extension Encode::IMAPUTF7.
 
+1.04 - Fri Jun 18 12:28:40 2010
+	Correct handling of bad data (rt: #57984)
+
 1.04	2009-04-30
     Revised the revision history
     (see http://peter.makholm.net/2009/04/30/i-broke-encode-imaputf7/)
