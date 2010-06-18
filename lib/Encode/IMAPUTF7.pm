@@ -64,9 +64,9 @@ sub decode($$;$) {
             my $pad = length($base64) % 4;
             $base64 .= "=" x ( 4 - $pad ) if $pad;
             $str .= $e_utf16->decode( decode_base64($base64) );
-        } elsif ( $bytes =~ /\G\+/ogc ) {
-            $^W and warn "Bad UTF7 data escape";
-            $str .= "+";
+        } elsif ( $bytes =~ /\G\&/ogc ) {
+            $^W and warn "Bad IMAP-UTF7 data escape";
+            $str .= "&";
         } else {
             die "This should not happen " . pos($bytes);
         }
